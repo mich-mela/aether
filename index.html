@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="AETHER — Explore Beyond the Unknown. Interactive space exploration, 3D solar system, physics simulations, and astronomy learning platform." />
+  <meta name="theme-color" content="#07111F" />
+  <title>AETHER — Explore Beyond the Unknown</title>
+
+  <!-- Typography: Space Grotesk (display), Inter (body), JetBrains Mono (telemetry) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Modular Design System -->
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="components.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="responsive.css" />
+
+  <!-- Allowed CDN Libraries (with graceful offline fallbacks in JS) -->
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="app-shell" class="app-shell">
+    <!-- Persistent Sidebar Navigation -->
+    <aside id="sidebar" class="sidebar" aria-label="Primary Navigation">
+      <!-- Populated by js/navigation.js -->
+    </aside>
+
+    <!-- Mobile Sidebar Backdrop -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- Main Column -->
+    <div class="app-main-column">
+      <!-- Persistent Top Header -->
+      <header id="topbar" class="topbar" role="banner">
+        <!-- Populated by js/navigation.js -->
+      </header>
+
+      <!-- Active View Container -->
+      <main id="main-content" class="main-content" tabindex="-1" role="main">
+        <div class="boot-loader" aria-live="polite">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Initializing AETHER Mission Control...</p>
+        </div>
+      </main>
+
+      <!-- Official Sources & Platform Footer -->
+      <footer id="app-footer" class="app-footer" role="contentinfo">
+        <!-- Populated by js/footer.js -->
+      </footer>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav id="mobile-bottom-nav" class="mobile-bottom-nav" aria-label="Quick Mobile Navigation">
+    <!-- Populated by js/navigation.js -->
+  </nav>
+
+  <!-- Modal Root -->
+  <div id="modal-root" class="modal-root" aria-hidden="true"></div>
+
+  <!-- Toast Notification Region -->
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Application Entry Point (ES Module) -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* ==========================================================================
+   AETHER DESIGN SYSTEM — CSS VARIABLES & THEMES
+   Default: Dark Mission-Control Theme
+   ========================================================================== */
+
+:root,
+[data-theme="dark"] {
+  /* Core Brand Palette */
+  --bg-primary: #07111F;
+  --bg-secondary: #0B1728;
+  --bg-surface: #101F33;
+  --bg-surface-elevated: #152842;
+  --bg-surface-hover: #1A3150;
+  --bg-input: #091525;
+
+  /* Accent & Scientific Category Colors */
+  --accent-cyan: #35D6F2;
+  --accent-cyan-hover: #5BE0F7;
+  --accent-cyan-dim: rgba(53, 214, 242, 0.14);
+  --accent-cyan-border: rgba(53, 214, 242, 0.34);
+  --accent-blue: #4F8CFF;
+  --accent-emerald: #2DD4A0;
+  --accent-amber: #F5B041;
+  --accent-rose: #F2647D;
+  --accent-violet: #9B7BFF;
+
+  /* Typography Colors */
+  --text-primary: #F5F8FC;
+  --text-secondary: #C8D3DF;
+  --text-muted: #8EA1B7;
+  --text-inverse: #07111F;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(200, 211, 223, 0.1);
+  --border-default: rgba(200, 211, 223, 0.16);
+  --border-strong: rgba(200, 211, 223, 0.28);
+
+  /* Shadows & Subtle Glows */
+  --shadow-sm: 0 2px 8px rgba(3, 8, 16, 0.35);
+  --shadow-md: 0 8px 24px rgba(3, 8, 16, 0.45);
+  --shadow-lg: 0 18px 48px rgba(2, 6, 14, 0.65);
+  --glow-cyan: 0 0 24px rgba(53, 214, 242, 0.16);
+
+  /* Typography Scale */
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.2rem, 1.5vw, 1.375rem);
+  --text-2xl: clamp(1.45rem, 2.2vw, 1.85rem);
+  --text-3xl: clamp(1.85rem, 3vw, 2.5rem);
+
+  /* Spacing & Layout */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  --sidebar-width: 264px;
+  --sidebar-collapsed: 76px;
+  --topbar-height: 64px;
+  --mobile-nav-height: 64px;
+  --max-content-width: 1440px;
+
+  /* Z-Index Layers */
+  --z-base: 1;
+  --z-sticky: 20;
+  --z-topbar: 40;
+  --z-sidebar: 50;
+  --z-backdrop: 45;
+  --z-modal: 100;
+  --z-toast: 120;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 240ms;
+}
+
+[data-theme="light"] {
+  --bg-primary: #F2F6FB;
+  --bg-secondary: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #E8F0F9;
+  --bg-surface-hover: #DCE7F5;
+  --bg-input: #F7FAFD;
+
+  --accent-cyan: #0A84A8;
+  --accent-cyan-hover: #076D8C;
+  --accent-cyan-dim: rgba(10, 132, 168, 0.11);
+  --accent-cyan-border: rgba(10, 132, 168, 0.32);
+  --accent-blue: #2563EB;
+  --accent-emerald: #0E9F6E;
+  --accent-amber: #C27803;
+  --accent-rose: #D9385A;
+  --accent-violet: #6D4AFF;
+
+  --text-primary: #0B1728;
+  --text-secondary: #2B3F59;
+  --text-muted: #566B85;
+  --text-inverse: #F5F8FC;
+
+  --border-subtle: rgba(11, 23, 40, 0.08);
+  --border-default: rgba(11, 23, 40, 0.14);
+  --border-strong: rgba(11, 23, 40, 0.24);
+
+  --shadow-sm: 0 2px 6px rgba(11, 23, 40, 0.06);
+  --shadow-md: 0 8px 20px rgba(11, 23, 40, 0.09);
+  --shadow-lg: 0 18px 40px rgba(11, 23, 40, 0.14);
+  --glow-cyan: 0 0 20px rgba(10, 132, 168, 0.14);
+}
